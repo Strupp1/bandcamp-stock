@@ -1,13 +1,30 @@
 {
-	"manifest_version": 2,
-	"name": "bandcamp remaining copies",
-	"version": "0.7",
-	"icons": { "512": "bc_stock_512.png", "128": "bc_stock_128.png", "32": "bc_stock_32.png"},
-	"content_scripts":[
+	"manifest_version": 3,
+	"name": "Bandcamp Stock Count",
+	"version": "1.0.0a1",
+	"icons": {
+		"512": "bc_stock_512.png",
+		"128": "bc_stock_128.png",
+		"32": "bc_stock_32.png"
+	},
+	"content_scripts": [
 		{
-			"matches": ["*://*/*"],
-			"js": ["content.js"]
+			"matches": [
+				"*://*/*"
+			],
+			"js": [
+				"content.js"
+			]
 		}
 	],
-	"web_accessible_resources": ["script.js"]
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"script.js"
+			],
+			"matches": [
+				"*://*/*"
+			]
+		}
+	]
 }
