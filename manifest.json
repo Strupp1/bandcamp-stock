@@ -2,29 +2,38 @@
 	"manifest_version": 3,
 	"name": "Bandcamp Stock Count",
 	"version": "0.1.1",
+	"description": "Finds in-stock counts for items available on Bandcamp pages.",
 	"icons": {
-		"512": "bc_stock_512.png",
-		"128": "bc_stock_128.png",
-		"32": "bc_stock_32.png"
+		"512": "icons/bc_stock_512.png",
+		"128": "icons/bc_stock_128.png",
+		"32": "icons/bc_stock_32.png"
 	},
+
 	"content_scripts": [
 		{
 			"matches": [
-				"*://*/*"
+				"*://*.bandcamp.com/*"
 			],
 			"js": [
-				"content.js"
+				"src/content.js"
 			]
 		}
 	],
+
 	"web_accessible_resources": [
 		{
 			"resources": [
-				"script.js"
+				"src/script.js"
 			],
 			"matches": [
-				"*://*/*"
+				"*://*.bandcamp.com/*"
 			]
 		}
-	]
+	],
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{cf72e3d5-531f-4610-8d3c-8a32353c033f}"
+		}
+	}
 }
