@@ -13,4 +13,6 @@ A browser extension that tells you the number of remaining copies of a record on
 
 ### Firefox
 
-tbd
+1. Download or clone this repo to your machine
+2. Open [about:debugging#/runtime/this-firefox}(about:debugging#/runtime/this-firefox) in Firefox
+3. Click on "load temporary add-on" and select one of the files inside the downloaded extension
