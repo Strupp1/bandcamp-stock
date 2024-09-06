@@ -37,10 +37,10 @@ jobs:
           cp -r src output_${{ matrix.browser }}/
           cp -r icons output_${{ matrix.browser }}/
           cd output_${{ matrix.browser }}
-          zip -r bandcamp-stock-${{ matrix.browser }}-$VERSION.zip .  # Create zip package
+          zip -r bandcamp-stock-${{ matrix.browser }}-${{ env.VERSION }}.zip .  # Create zip package
 
       - name: Upload ${{ matrix.browser }} package
         uses: actions/upload-artifact@v4
         with:
-          name: bandcamp-stock-${{ matrix.browser }}-$VERSION.zip
-          path: bandcamp-stock-${{ matrix.browser }}-$VERSION.zip
+          name: bandcamp-stock-${{ matrix.browser }}-${{ env.VERSION }}.zip
+          path: bandcamp-stock-${{ matrix.browser }}-${{ env.VERSION }}.zip
