@@ -30,7 +30,7 @@ jobs:
 
       - name: Package ${{ matrix.browser }} files
         run: |
-          mkdir -p output
+          mkdir -p output_${{ matrix.browser }}
           cp manifest_${{ matrix.browser }}.json output_${{ matrix.browser }}/manifest.json
           cp -r src output_${{ matrix.browser }}/
           cp -r icons output_${{ matrix.browser }}/
