@@ -26,7 +26,9 @@ jobs:
         
       - name: Get version number
         id: get_version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+        run: |
+          echo ${GITHUB_REF}
+          echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Package ${{ matrix.browser }} files
         run: |
@@ -41,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bandcamp-stock-${{ matrix.browser }}-${VERSION}.zip
-          path: output_${{ matrix.browser }}/bandcamp-stock-${{ matrix.browser }}-${VERSION}.zip
+          path: bandcamp-stock-${{ matrix.browser }}-${VERSION}.zip
