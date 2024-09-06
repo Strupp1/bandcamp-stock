@@ -1,7 +1,7 @@
 window.addEventListener("pageshow", function () {
 	console.log("BC Stock Count Extension Loaded!");
 	var s = document.createElement('script');
-	s.src = chrome.extension.getURL('script.js');
+	s.src = browser.runtime.getURL('src/script.js');
 	s.onload = function () {
 		this.remove();
 	};
