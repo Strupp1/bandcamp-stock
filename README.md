@@ -1,6 +1,6 @@
-# BandcampRemainingCopiesExtension
+# Bandcamp Stock Count
 
-A browser extension that tells you the number of remaining copies of a record on bandcamp.
+A browser extension that shows the number of items in stock on [Bandcamp](https://bandcamp.com) album pages.
 
 ## Installation
 
