@@ -4,21 +4,21 @@ A browser extension that tells you the number of remaining copies of a record on
 
 ## Installation
 
-### Chrome
+### Edge
 
-1. Download this repo as a zip file and unpack it.
-2. Rename manifest_chrome.json to just manifest.json and delete manifest_firefox.json
-3. In Chrome, go to _Chrome menu/More tools/Extensions_.
-4. Enable developer mode in the top right corner.
-5. Click on "load unpacked" and navigate to the folder of the unpacked extension, or drag and drop the unpacked folder on the Extensions page
+The extension is [available on Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/bandcamp-stock-count/odapaghohealagmnapgcpnmflmcilhgc).
 
-### Firefox
+### Mozilla Firefox
 
 You can install the extension from the [Mozilla Add-Ons page](https://addons.mozilla.org/de/firefox/addon/bandcamp-stock-count/).
 
-Alternatively, you can manually install it following these steps:
+### Google Chrome
 
-1. Download or clone this repo to your machine
-2. Rename manifest_firefox.json to just manifest.json and delete manifest_chrome.json
-3. Open [about:debugging#/runtime/this-firefox}(about:debugging#/runtime/this-firefox) in Firefox
-4. Click on "load temporary add-on" and select one of the files inside the downloaded extension
+Unfortunately, to upload extensions to the Google Chrome Extensions store, Google requires signing up as a Google developer which costs a fee.
+For now, the only way to install the extension is to download it locally and install it in developer mode.
+
+1. Download this repo as a zip file and unpack it to a location where you want to keep it.
+2. Rename manifest_chrome.json to just manifest.json and delete manifest_firefox.json
+3. In Chrome, go to _Chrome menu/More tools/Extensions_.
+4. Enable developer mode in the top right corner.
+5. Click on "load unpacked" and navigate to the folder of the unpacked extension, or drag and drop the unpacked folder on the Extensions page.
